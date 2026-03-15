@@ -79,7 +79,8 @@ jobs:
     steps:
       - name: Add 'ci-passed' label
         run: |
-          echo "Adding 'ci-passed' label to PR #${{ needs.fetch_data.outputs.pr_number }}"
-          gh pr edit ${{ needs.fetch_data.outputs.pr_number }} --add-label "ci-passed" --repo "$GITHUB_REPOSITORY"
+          echo "Adding 'ci-passed' label to PR #$PR_NUMBER"
+          gh pr edit "$PR_NUMBER" --add-label "ci-passed" --repo "$GITHUB_REPOSITORY"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ needs.fetch_data.outputs.pr_number }}
