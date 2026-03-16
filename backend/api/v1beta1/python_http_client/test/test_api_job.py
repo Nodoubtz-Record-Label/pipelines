@@ -65,11 +65,11 @@ class TestApiJob(unittest.TestCase):
                 service_account = '0', 
                 max_concurrency = '0', 
                 trigger = kfp_server_api.models.api_trigger.apiTrigger(
-                    cron_schedule = kfp_server_api.models.cron_schedule_allow_scheduling_the_job_with_unix_like_cron.CronSchedule allow scheduling the job with unix-like cron(
+                    cron_schedule = kfp_server_api.models.cron_schedule_allow_scheduling_the_job_with_unix_like_cron.CronSchedule(
                         start_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         end_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         cron = '0', ), 
-                    periodic_schedule = kfp_server_api.models.periodic_schedule_allow_scheduling_the_job_periodically_with_certain_interval.PeriodicSchedule allow scheduling the job periodically with certain interval(
+                    periodic_schedule = kfp_server_api.models.periodic_schedule_allow_scheduling_the_job_periodically_with_certain_interval.PeriodicSchedule(
                         start_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         end_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         interval_second = '0', ), ), 
