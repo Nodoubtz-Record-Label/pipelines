@@ -29,8 +29,8 @@ _KFP_PACKAGE_PATH = os.getenv('KFP_PACKAGE_PATH')
 
 
 @dsl.component(kfp_package_path=_KFP_PACKAGE_PATH)
-ddef list_dir_files_python(input_dir: Input[Artifact],
-                                subdir: str = 'texts'):
+def list_dir_files_python(input_dir: Input[Artifact],
+                               subdir: str = 'texts'):
     import os
     dir_items = os.listdir(os.path.join(input_dir.path, subdir))
     for dir_item in dir_items:
