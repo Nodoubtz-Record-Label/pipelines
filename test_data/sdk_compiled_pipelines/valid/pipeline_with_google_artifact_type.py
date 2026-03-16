@@ -33,6 +33,7 @@ def create_temporary_google_artifact_package(
         schema_version = '0.0.0'
 
         def __init__(self, name: str, uri: str, metadata: dict) -> None:
+            super().__init__(name=name, uri=uri, metadata=metadata)
             self.name = name
             self.uri = uri
             self.metadata = metadata
@@ -46,6 +47,7 @@ def create_temporary_google_artifact_package(
         schema_version = '0.0.0'
 
         def __init__(self, name: str, uri: str, metadata: dict) -> None:
+            super().__init__(name=name, uri=uri, metadata=metadata)
             self.name = name
             self.uri = uri
             self.metadata = metadata
