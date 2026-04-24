@@ -218,14 +218,14 @@ require (
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.61.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.61.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/runtime v0.61.0 // indirect
-	go.opentelemetry.io/otel v1.40.0 // indirect
+	go.opentelemetry.io/otel v1.41.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc v1.36.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp v1.36.0 // indirect
 	go.opentelemetry.io/otel/exporters/prometheus v0.58.0 // indirect
-	go.opentelemetry.io/otel/metric v1.40.0 // indirect
+	go.opentelemetry.io/otel/metric v1.41.0 // indirect
 	go.opentelemetry.io/otel/sdk v1.40.0 // indirect
 	go.opentelemetry.io/otel/sdk/metric v1.40.0 // indirect
-	go.opentelemetry.io/otel/trace v1.40.0 // indirect
+	go.opentelemetry.io/otel/trace v1.41.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.7.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/crypto v0.45.0 // indirect
